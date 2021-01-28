@@ -1,0 +1,45 @@
+{
+  "prettier.printWidth": 1000,
+  "editor.wordWrap": "on",
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "emmet.syntaxProfiles": {
+    "javascript": "html"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "window.restoreWindows": "none",
+  "window.zoomLevel": 1,
+  "extensions.ignoreRecommendations": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[dart]": {
+  //   "editor.defaultFormatter": "Dart-Code.dart-code",
+  //   "editor.formatOnSave": true
+  // },
+  "workbench.iconTheme": "vscode-icons",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.minimap.enabled": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.alwaysShowStatus": true,
+  // "prettier.ignorePath": "c:/Users/william/.prettierrc.json",
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "bracket-pair-colorizer-2.colors": ["#fafafa", "#9F51B6", "#F7C244", "#F07850", "#9CDD29", "#C497D4"],
+  "workbench.colorTheme": "Monokai Night",
+  "prettier.arrowParens": "avoid"
+}
