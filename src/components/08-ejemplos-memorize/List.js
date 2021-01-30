@@ -3,7 +3,7 @@ import { Item } from './Item';
 
 export const List = memo(({ users, handlerDelete }) => {
   useEffect(() => {
-    console.log('List render');
+    // console.log('List render');
   });
 
   return (

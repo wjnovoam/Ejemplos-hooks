@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { List } from './List';
 
+import 'bootstrap/dist/css/bootstrap.css';
 import './ejemplo.css';
 
 const initialUsers = [
@@ -30,13 +31,24 @@ export const Memorize = () => {
     [search, users]
   );
 
-  const handlerDelete = userId => {
-    setUsers(users.filter(user => user.id != userId));
-  };
+  const handlerDelete = useCallback(
+    userId => {
+      setUsers(users.filter(user => user.id !== userId));
+    },
+    [users]
+  );
 
   useEffect(() => {
-    console.log('App render');
+    // console.log('App render');
   });
+
+  const printUsers = useCallback(() => {
+    console.log('Changed user', users);
+  }, [users]);
+
+  useEffect(() => {
+    printUsers();
+  }, [users, printUsers]);
 
   // console.log(users);
 
@@ -45,9 +57,13 @@ export const Memorize = () => {
       <h1>Otro ejemplo de React memo, useMemo y useCallback</h1>
       <hr />
       <div>
-        <input type="text" name="nombre" id="" value={text} onChange={e => setText(e.target.value)} />
-        <button onClick={handleAdd}>Add</button>
-        <button onClick={handleSearch}>Search</button>
+        <input className="form-control" type="text" name="nombre" id="" value={text} onChange={e => setText(e.target.value)} />
+        <button className="btn btn-primary m-1" onClick={handleAdd}>
+          Add
+        </button>
+        <button className="btn btn-secondary m-1" onClick={handleSearch}>
+          Search
+        </button>
         <List users={filteredUsers} handlerDelete={handlerDelete} />
       </div>
     </>
