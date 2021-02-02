@@ -15,8 +15,9 @@ import ReactDOM from 'react-dom';
 // import { Padre } from './components/07-tarea-memo/Padre';
 // import { Memorize } from './components/08-ejemplos-memorize/Memorize';
 // import { TodoApp } from './components/09-useReducer/TodoApp';
-import CounterApp from './components/10-useReducer-ejemplos/CounterApp';
+// import CounterApp from './components/10-useReducer-ejemplos/CounterApp';
 // import TodoApp from './components/10-useReducer-ejemplos/TodoApp';
 // import ProductApp from './components/10-useReducer-ejemplos/ProductApp';
+import { MainApp } from './components/11-useContext/MainApp';
 
-ReactDOM.render(<CounterApp />, document.getElementById('root'));
+ReactDOM.render(<MainApp />, document.getElementById('root'));
